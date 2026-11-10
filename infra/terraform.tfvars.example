@@ -1,0 +1,18 @@
+# Copy to terraform.tfvars and fill in the placeholders before deployment.
+# terraform.tfvars is ignored by Git and must never be committed.
+
+region     = "cn-north-4"
+app_name   = "form-submission-notification"
+project_id = "<your-project-id>"
+
+# Instance administrator password for the key-value store.
+# The data-plane user is fixed to rwuser; this value is the password.
+geminidb_password = "<your-instance-password>"
+
+# Leave empty to skip the email subscription. When set, the subscriber must
+# confirm the subscription message before any notification is delivered.
+notify_email = "<your-email@example.com>"
+
+# Set to false for the lightweight verification profile: the dedicated gateway
+# and its public entry are not created; invoke the function directly instead.
+enable_public_api = true

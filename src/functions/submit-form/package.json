@@ -1,0 +1,15 @@
+{
+  "name": "submit-form",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Accept a form submission, persist it and publish a notification",
+  "main": "index.js",
+  "license": "MIT-0",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.744.0",
+    "@aws-sdk/util-dynamodb": "^3.744.0",
+    "@huaweicloud/huaweicloud-sdk-core": "^3.1.221",
+    "@huaweicloud/huaweicloud-sdk-smn": "^3.1.221",
+    "uuid": "^9.0.1"
+  }
+}
